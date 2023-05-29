@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8b5f82222b.js" crossorigin="anonymous"></script>
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <main class="cuerpo">
+        <section class="aencriptado"> 
+            <!-- Texto -->
+            <div>
+                <textarea type="text" class="texto" id="textoEncriptado" placeholder="Escriba el texto aquí."></textarea>
+            </div>
+            <article class="condiciones">
+                <p>Solo letras minúsculas y sin acentos</p> 
+            </article>
+            <!-- Botones -->
+            <div class="buttons">
+                <button type="button" class="btnencriptar" id="botonEncriptado">Encriptar</button>
+                <button type="button" class="btndesencriptar" id="botonDesencriptado">Desencriptar</button>
+            </div>
+        </section>
+    
+        <aside class="aresultado">
+            <textarea name="resultado" class="resultado" id="textoDesencriptado" placeholder="Tu resultado aparecerá aquí." cols="30"
+            rows="10"></textarea>
+            <div class="posicionbtnc">
+                <button type="button" class="Btncopiar" id="botonCopiar">Copiar</button>
+            </div>
+        </aside>
+        
+        <footer class="ftpage">
+            <div class="grupo">
+                <div class="caja">
+                    <h2>Hola, soy Joel Espinal</h2>
+                    <p>Soy estudiante universitario de ingeniería electrónica y formo parte del programa de Oracle Next Education ONE y Alura Latam.</p>
+                </div>
+                <div class="caja">
+                    <h2>Me puedes encontrar en:</h2>
+                    <div class="red-social">
+                        <a href="https://www.linkedin.com/in/joel-espinal-a89829242/" class="fa-brands fa-linkedin" target="_blank"></a>
+                        <a href="https://github.com/spiller-one" class="fa-brands fa-github" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>
+                    
+
